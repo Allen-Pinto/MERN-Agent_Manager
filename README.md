@@ -1,4 +1,3 @@
-```markdown
 # MERN Agent Manager
 
 ## **Project Overview**
