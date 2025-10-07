@@ -4,7 +4,6 @@ import { uploadLeads } from '../../services/api';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';  
 import { FiUpload, FiCheckCircle } from 'react-icons/fi';
-import { toast } from 'react-toastify';
 
 const UploadForm = ({ onUploadSuccess }) => {
   const [loading, setLoading] = useState(false);  
