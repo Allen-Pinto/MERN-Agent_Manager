@@ -6,6 +6,7 @@ import toast from 'react-hot-toast';
 import { FiMail, FiLock } from 'react-icons/fi';
 import Input from '../common/Input';
 import Button from '../common/Button';
+import { toast } from 'react-toastify';
 
 const Login = ({ onSuccess }) => {
   const [formData, setFormData] = useState({ email: '', password: '' });

@@ -4,7 +4,7 @@ import AgentList from '../components/Agents/AgentList';
 import AgentForm from '../components/Agents/AgentForm';
 import Button from '../components/common/Button';
 import { getAgents, deleteAgent } from '../services/api';  // API functions
-import { toast } from 'react-toastify';  // NEW: Direct import for toasts (matches your setup)
+import { toast } from 'react-toastify';  
 
 const AgentsPage = () => {
   const [agents, setAgents] = useState([]);

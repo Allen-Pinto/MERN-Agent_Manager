@@ -4,6 +4,7 @@ import { getAgents, getAllLeads } from '../services/api';
 import Toast from '../components/common/Toast';
 import { FiUsers, FiUpload, FiBarChart2 } from 'react-icons/fi';
 import Button from '../components/common/Button';
+import { toast } from 'react-toastify';
 
 const DashboardPage = () => {
   const [stats, setStats] = useState({ agents: 0, leads: 0 });
