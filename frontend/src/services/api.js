@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getToken, logout } from '../utils/auth';
 
-const API_BASE = 'http://localhost:5002/api';
+const API_BASE = 'https://mern-agent-manager-5pvw.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_BASE,

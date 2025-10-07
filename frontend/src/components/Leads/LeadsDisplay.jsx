@@ -19,7 +19,7 @@ const LeadsDisplay = ({ leads, agents, onLeadDeleted }) => {
     setDeletingLeadId(leadId);
     
     try {
-      const response = await fetch(`http://localhost:5002/api/leads/${leadId}`, {
+      const response = await fetch(`https://mern-agent-manager-5pvw.onrender.com/api/leads/${leadId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`,
@@ -55,7 +55,7 @@ const LeadsDisplay = ({ leads, agents, onLeadDeleted }) => {
       
       // Delete all leads for this agent
       const deletePromises = leadsToDelete.map(lead =>
-        fetch(`http://localhost:5002/api/leads/${lead._id}`, {
+        fetch(`https://mern-agent-manager-5pvw.onrender.com/api/leads/${lead._id}`, {
           method: 'DELETE',
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`,

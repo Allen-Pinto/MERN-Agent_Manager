@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5002/api';
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'https://mern-agent-manager-5pvw.onrender.com/api';
 
 export const createAgent = async (agentData) => {
   const response = await axios.post(`${API_BASE_URL}/agents`, agentData);
