@@ -17,7 +17,7 @@ const app = express();
 
 // 1. CORS Middleware 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'mern-agent-manager-gules.vercel.app',
   credentials: true
 }));
 
