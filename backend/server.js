@@ -17,9 +17,10 @@ const app = express();
 
 // 1. CORS Middleware 
 app.use(cors({
-  origin: 'mern-agent-manager-gules.vercel.app',
+  origin: 'https://mern-agent-manager-10l0446p5-allen-pintos-projects.vercel.app',
   credentials: true
 }));
+
 
 // 2. Body Parser Middleware 
 app.use(express.json());  
